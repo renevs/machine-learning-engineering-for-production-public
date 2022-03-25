@@ -1,4 +1,4 @@
-#alterado
+#alterado token: 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
 import pickle
 import numpy as np
 from typing import List
@@ -10,7 +10,7 @@ from pydantic import BaseModel, conlist
 app = FastAPI(title="Predicting Wine Class with batching")
 
 # Open classifier in global scope
-with open("models/wine.pkl", "rb") as file:
+with open("models/wine-95.pkl", "rb") as file:
     clf = pickle.load(file)
 
 
